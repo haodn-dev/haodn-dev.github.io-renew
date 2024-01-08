@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
+  --wt-color-dark: #27282c;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --site-header-zindex: 1020;
+  --site-header-height: 72px;
+  --mobile-site-header-height: 48px;
+  --site-header-bg: var(--wt-color-dark,#27282c);
 }
 
 @media (prefers-color-scheme: dark) {

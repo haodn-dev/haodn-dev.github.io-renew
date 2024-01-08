@@ -1,0 +1,71 @@
+.pageHeader {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  .siteHeaderWrapper {
+    .siteHeader {
+      position: relative;
+      z-index: var(--site-header-zindex, 1020);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: var(--site-header-height, 72px);
+      background: #27282c;
+      background: var(--site-header-bg, #27282c);
+
+      .siteHeaderContainer {
+        position: relative;
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 1276px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 1000px) {
+          padding-left: 22px;
+          padding-right: 22px;
+          max-width: 100%;
+        }
+        @media screen and (max-width: 1276px) {
+          padding-left: 22px;
+          padding-right: 22px;
+          max-width: 996px;
+        }
+
+        .siteHeaderInner {
+          position: relative;
+
+          .mainNav {
+            .navMenu {
+              .navList {
+                li {
+                  a{
+                    opacity: 0.6;
+                    text-decoration: none;
+                    letter-spacing: .0015em;
+                    font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+                    -webkit-font-feature-settings: "kern", "liga", "calt";
+                    font-feature-settings: "kern", "liga", "calt";
+                    font-size: var(--rs-text-2-font-size, 16px);
+                    font-weight: 400;
+                    line-height: var(--rs-text-2-line-height, 24px);
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: var(--wt-color-white, #fff);
+
+                    &:hover {
+                      color: var(--wt-color-white, #fff);
+                      opacity: 1;
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
