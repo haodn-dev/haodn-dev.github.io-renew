@@ -3,30 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --wt-color-dark: #27282c;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --site-header-zindex: 1020;
-  --site-header-height: 72px;
-  --mobile-site-header-height: 48px;
-  --site-header-bg: var(--wt-color-dark,#27282c);
+    --cp-color-1-hsl: 0deg 0% 100%;
+    --cp-color-1: hsl(var(--cp-color-1-hsl));
+    --wt-color-dark: #27282c;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --site-header-zindex: 1020;
+    --site-header-height: 72px;
+    --mobile-site-header-height: 48px;
+    --site-header-bg: var(--wt-color-dark, #27282c);
+    --cp-font-family-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+    ) rgb(var(--background-start-rgb));
 }

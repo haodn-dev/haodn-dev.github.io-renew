@@ -1,0 +1,287 @@
+.svgContainer {
+  position: relative;
+  min-width: 455px;
+  max-width: 50%;
+  @media (max-width: 1100px) {
+    min-height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .svgField {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 410px;
+    background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%);
+    border-radius: 10px;
+    @media screen and (max-width: 1100px) {
+      position: absolute;
+      left: 5%;
+      top: 0;
+      width: 90%;
+      height: 310px;
+    }
+    @media (min-width: 1101px) {
+      width: 90%;
+      right: 0;
+    }
+  }
+
+  .svgFieldHTML {
+    right: 20px;
+    top: -20px;
+    @media screen and (max-width: 1100px) {
+      top: 20px;
+      left: 2.5%;
+      right: 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 36px auto 36px;
+      align-items: center;
+
+      svg {
+        margin: 10px;
+      }
+
+      h1 {
+        font-family: Lato, sans-serif;
+        font-weight: 900;
+        font-size: 13px;
+        letter-spacing: 1.57px;
+        color: #c5c8d4;
+        margin: 0;
+      }
+    }
+  }
+
+  .svgFieldSCSS {
+    right: -30px;
+    top: 130px;
+    @media (max-width: 1100px) {
+      top: 80px;
+      right: 2.5%;
+    }
+
+    .content {
+      margin: 0 10px 10px;
+      color: var(--cp-color-1);
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+      }
+
+      .cssPropertyField {
+        width: 0;
+        height: 1.2em;
+        border-right: 0.15em solid transparent;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+
+      .cssPropertyField1 {
+        animation-timing-function: steps(10);
+        animation: typingVer 1.5s steps(10) 0s forwards, cursor 1s linear 0s 3;
+      }
+
+      .cssPropertyField2 {
+        margin-left: 2rem;
+        animation: typingVer2 3s steps(30) 3s forwards, cursor 1s linear 3s 3;
+      }
+
+      .cssPropertyFieldChild1 {
+        animation: typingVer3 3s steps(30) 6s forwards, cursor 1s linear 6s 3;
+      }
+
+      .cssPropertyFieldChild2 {
+        animation: typingVer4 3s steps(30) 9s forwards, cursor 1s linear 9s 3;
+      }
+
+      .cssPropertyFieldChild3 {
+        animation: typingVer5 3s steps(30) 12s forwards, cursor 1s linear 12s infinite;
+      }
+
+      .cssPropertyFieldChild1, .cssPropertyFieldChild2, .cssPropertyFieldChild3 {
+        animation-duration: 1s;
+        animation-timing-function: steps(10);
+        margin-left: 4rem;
+      }
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 36px auto 36px;
+      align-items: center;
+
+      svg {
+        margin: 10px;
+
+        h1 {
+          font-family: Lato, sans-serif;
+          font-weight: 900;
+          font-size: 13px;
+          letter-spacing: 1.57px;
+          color: #c5c8d4;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .svgFieldJS {
+    right: 40px;
+    top: 280px;
+    @media (max-width: 1100px) {
+      top: 150px;
+      left: 50%;
+      margin-left: -250px;
+      z-index: 4;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 36px auto 36px;
+      align-items: center;
+
+      svg {
+        margin: 10px;
+      }
+
+      h1 {
+        font-family: Lato, sans-serif;
+        font-weight: 900;
+        font-size: 13px;
+        letter-spacing: 1.57px;
+        color: #c5c8d4;
+        margin: 0;
+      }
+    }
+  }
+
+  .svgItem {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    background: #1d1e22;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
+    border-radius: 6px;
+  }
+
+  code, .content {
+    font-family: var(--cp-font-family-monospace);
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .content {
+    margin: 0 10px 10px;
+    color: var(--cp-color-1);
+  }
+
+  .tag {
+    color: #a88038;
+  }
+
+  .class {
+    color: #e1ca72;
+  }
+
+  .cssProperty {
+    color: #9f8198;
+  }
+
+  .deg {
+    color: #de7300;
+  }
+
+  .variable {
+    color: #7a99ad;
+  }
+
+  .string {
+    color: #74b087;
+  }
+
+}
+
+
+.typingVer2Animate {
+  animation: typingVer2 3s steps(30) 0s forwards, cursor 1s linear 0s 3;
+}
+
+.svgWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2rem;
+  @media (min-width: 1101px) {
+    padding: 3rem 0;
+  }
+}
+
+@keyframes cursor {
+  0%, 20%, 80%, to {
+    border-color: transparent
+  }
+
+  25%, 75% {
+    border-color: var(--cp-color-1)
+  }
+}
+
+
+@keyframes typingVer {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes typingVer2 {
+  0% {
+    width: 0
+  }
+
+  to {
+    width: 225px
+  }
+}
+
+@keyframes typingVer3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70px;
+  }
+}
+
+@keyframes typingVer4 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 75px;
+  }
+}
+
+@keyframes typingVer5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 160px;
+  }
+}
