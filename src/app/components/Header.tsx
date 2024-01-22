@@ -14,7 +14,7 @@ export default function Header() {
                                     className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto">
                                     <a href="https://haodn.dev/"
                                        className="flex items-center space-x-3 rtl:space-x-reverse">
-                                        <div className="w-20 h-20  relative">
+                                        <div className="w-20 h-20 relative">
                                             <Image src={logo}
                                                    alt="Haodn.dev"/>
                                         </div>
@@ -29,7 +29,8 @@ export default function Header() {
                                                   strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
                                         </svg>
                                     </button>
-                                    <div className={`hidden w-full md:block md:w-auto ${styles.navMenu}`} id="navbar-default">
+                                    <div className={`hidden w-full md:block md:w-auto ${styles.navMenu}`}
+                                         id="navbar-default">
                                         <ul className={`font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ${styles.navList}`}>
                                             <li>
                                                 <a href="#"
