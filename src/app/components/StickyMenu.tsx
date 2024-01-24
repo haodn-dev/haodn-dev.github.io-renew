@@ -9,7 +9,12 @@ export default function StickyMenu() {
                         <h3>haodn.dev</h3>
                     </div>
                     <div className={styles.stickyMenuListMenu}>
-                        <h3 className="rs-h3 rs-h3_theme_dark">about me</h3>
+                        <a href="#about" title="about me">
+                            <h3 className="rs-h3 rs-h3_theme_dark">about me</h3>
+                        </a>
+                        <a href="#projects" title="about me">
+                            <h3 className="rs-h3 rs-h3_theme_dark">projects</h3>
+                        </a>
                     </div>
                 </div>
             </div>

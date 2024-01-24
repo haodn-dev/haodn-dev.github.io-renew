@@ -4,7 +4,7 @@ import BannerSVG from "@/app/components/BannerSVG";
 
 export default function PageContent() {
     return (
-        <div className={styles.pageWrapper}>
+        <div className={styles.pageWrapper} id={"about"}>
             <div className={styles.pageContent}>
                 <div className={styles2.svgWrapper}>
                     <h1 className={styles.title}>Duong Nhat Hao</h1>

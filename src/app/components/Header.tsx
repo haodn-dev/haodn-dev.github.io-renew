@@ -18,13 +18,14 @@ export default function Header() {
                                 <div className={styles.navMenu} id="navbar-default">
                                     <ul className={styles.navList}>
                                         <li>
-                                            <a href="#"
-                                               className="block py-2 px-3 md:p-0"
-                                               aria-current="page">Home</a>
+                                            <a href="/" className="block py-2 px-3 md:p-0" aria-current="page"
+                                               title="Home">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#"
-                                               className="block py-2 px-3 md:p-0">About</a>
+                                            <a href="#about" className="block py-2 px-3 md:p-0" title="About">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#projects" className="block py-2 px-3 md:p-0" title="Project">Project</a>
                                         </li>
                                     </ul>
                                 </div>

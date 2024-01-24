@@ -38,7 +38,8 @@ export default function BannerSVG() {
                                 className={styles.comment}>{'//'}please click on links below to contact with me</span><br/>
                                 <span>&#123;</span><br/>
                                 <span className={`${styles.description} ${styles.textWithTab}`}><span
-                                    className={styles.meta}>email</span>: <Link className={styles.link}
+                                    className={styles.meta}>email</span>:
+                                    <Link className={styles.link}
                                                                                 href="mailto: haodn.dev@gmail.com"
                                                                                 target={"_blank"}
                                                                                 title="Duong Nhat Hao email">haodn.dev@gmail.com</Link></span><span>,</span><br/>
@@ -46,7 +47,7 @@ export default function BannerSVG() {
                                     className={styles.meta}>linkedin</span>: <Link className={styles.link}
                                                                                    title="Duong Nhat Hao linked-in profile"
                                                                                    target={"_blank"}
-                                                                                   href="https://www.linkedin.com/in/duong-nhat-hao/">haodn.dev@gmail.com</Link></span><span>,</span><br/>
+                                                                                   href="https://www.linkedin.com/in/duong-nhat-hao/">Hao Duong</Link></span><span>,</span><br/>
                                 <span>&#125;</span>
                             </code>
                         </div>

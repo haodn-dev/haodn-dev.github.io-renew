@@ -3,7 +3,6 @@ import {JetBrains_Mono} from 'next/font/google'
 import './globals.css'
 import React from "react";
 import Header from "@/app/components/Header";
-import PageContent from "@/app/components/PageContent";
 import StickyMenu from "@/app/components/StickyMenu";
 
 export const metadata: Metadata = {
@@ -25,12 +24,6 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <div className="page-wrapper">
             <StickyMenu></StickyMenu>
             {children}
-            <PageContent></PageContent>
-            <PageContent></PageContent>
-            <PageContent></PageContent>
-            <PageContent></PageContent>
-            <PageContent></PageContent>
-
         </div>
         </body>
         </html>

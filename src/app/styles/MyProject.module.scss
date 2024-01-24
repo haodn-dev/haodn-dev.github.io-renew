@@ -1,0 +1,81 @@
+.myProject {
+  color: #923cff;
+
+  .titleWrapper {
+    margin: 5rem 0;
+
+    h2 {
+      letter-spacing: -.005em;
+      font-feature-settings: "kern", "liga", "calt";
+      font-size: var(--rs-hero-font-size, 72px);
+      font-weight: var(--rs-font-weight-semi-bold, 530);
+      line-height: var(--rs-hero-line-height, 72px);
+    }
+
+    .subtitle {
+      color: var(--rs-typography-color-hard, #fff);
+      font-size: var(--rs-subtitle-2-font-size, 29px);
+    }
+  }
+
+
+  .listProjectWrapper {
+    .project {
+      margin: 5rem 0;
+
+      .nameLinkProject {
+        &:hover {
+          color: #923cff;
+
+          h3 {
+            color: #923cff;
+            text-decoration: underline white;
+          }
+        }
+      }
+
+      .projectName {
+        color: var(--rs-typography-color-hard, #fff);
+        letter-spacing: -.001em;
+        -webkit-font-feature-settings: "kern", "liga", "calt";
+        font-feature-settings: "kern", "liga", "calt";
+        font-size: var(--rs-h1-font-size, 43px);
+        font-weight: var(--rs-font-weight-semi-bold, 530);
+        line-height: var(--rs-h1-line-height, 49px);
+      }
+
+      .hoiana {
+        width: 1200px;
+        position: relative;
+        height: 1920px;
+      }
+
+      .projectVideoWrapper {
+        position: relative;
+        width: 60vw; /* 60% of the viewport width */
+        height: 33.75vw; /* 60% * 9/16 = 33.75% of the viewport width (to maintain 16:9 aspect ratio) */
+        background: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        @media (max-width: 1024px) {
+          width: 90vw; /* 90% of the viewport width */
+          height: calc(90vw * 9/16); /* Calculate the height to maintain a 16:9 aspect ratio */
+        }
+        video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
