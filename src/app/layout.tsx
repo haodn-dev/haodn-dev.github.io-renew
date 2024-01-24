@@ -4,6 +4,7 @@ import './globals.css'
 import React from "react";
 import Header from "@/app/components/Header";
 import PageContent from "@/app/components/PageContent";
+import StickyMenu from "@/app/components/StickyMenu";
 
 export const metadata: Metadata = {
     title: 'Portfolio : Haodn.dev',
@@ -21,8 +22,16 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <html lang="en">
         <body className={jetBrainsMono.className}>
         <Header></Header>
-        <PageContent></PageContent>
-        {children}
+        <div className="page-wrapper">
+            <StickyMenu></StickyMenu>
+            {children}
+            <PageContent></PageContent>
+            <PageContent></PageContent>
+            <PageContent></PageContent>
+            <PageContent></PageContent>
+            <PageContent></PageContent>
+
+        </div>
         </body>
         </html>
     )

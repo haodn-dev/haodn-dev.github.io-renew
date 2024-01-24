@@ -1,0 +1,36 @@
+.stickyMenu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 0;
+  background: linear-gradient(180deg, rgba(13, 13, 13, .8), rgba(13, 13, 13, 0));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  visibility: visible;
+  opacity: 1;
+  animation: 1s ease 0s 1 normal none running none;
+
+  .stickyMenuContainer {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-right: 22px;
+    max-width: 1276px;
+
+    .stickyMenuRow {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-content: space-between;
+      --wt-horizontal-layout-gutter: 16px;
+      display: flex;
+    }
+  }
+}
