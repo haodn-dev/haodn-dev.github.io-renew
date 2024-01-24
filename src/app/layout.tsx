@@ -4,6 +4,7 @@ import './globals.css'
 import React from "react";
 import Header from "@/app/components/Header";
 import StickyMenu from "@/app/components/StickyMenu";
+import {SpeedInsights} from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     title: 'Portfolio : Haodn.dev',
@@ -25,6 +26,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <StickyMenu></StickyMenu>
             {children}
         </div>
+        <SpeedInsights/>
         </body>
         </html>
     )
